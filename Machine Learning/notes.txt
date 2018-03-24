@@ -1,0 +1,12 @@
+K-means algorithm
+Step 1: intialize K Centroids
+    > Randomly select the intial Centroid locations
+    > Use the first K data points as the Centroid
+
+Step 2: Asign each data point to a cluster based on the proximity to the centroid
+    > arg Minimum(k) = Distance(from x(i) to Centroid(k))
+
+Step 3: Recalculate the new Centroids.
+    > NewCentroids(k) = 1 / {N(k)Sum(x(i)) for all x(i) belonging to the cluster k}
+
+Step 4: Stop when converge, else go back to step 2
